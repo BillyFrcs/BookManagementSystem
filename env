@@ -40,7 +40,7 @@ app.baseURL = 'http://localhost:1908'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
-database.default.database = BookDataSystemDB
+database.default.database = BookManagementSystem
 database.default.username = 
 database.default.password = 
 database.default.DBDriver = MySQLi
@@ -48,7 +48,7 @@ database.default.DBDriver = MySQLi
 database.default.port = 3306
 
 database.tests.hostname = localhost
-database.tests.database = BookDataSystemDB
+database.tests.database = BookManagementSystem
 database.tests.username = 
 database.tests.password = 
 database.tests.DBDriver = MySQLi

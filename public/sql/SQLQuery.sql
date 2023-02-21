@@ -1,4 +1,4 @@
-CREATE DATABASE BookDataSystemDB;
+CREATE DATABASE BookManagementSystem;
 
 CREATE TABLE BookData(
 	ID INT NOT NULL AUTO_INCREMENT,
@@ -10,14 +10,14 @@ CREATE TABLE BookData(
     PRIMARY KEY(ID)
 );
 
-INSERT INTO BookDataSystemDB.BookData(Name, Author, ISBN, DateOfPublishing) 
+INSERT INTO BookManagementSystem.BookData(Name, Author, ISBN, DateOfPublishing) 
     VALUES ('C++ Master', 'Sendy', '11891222', '2022-04-19');
 
-UPDATE BookDataSystemDB.BookData SET Name = 'Unity Engine Basic' WHERE ID = 1;    
+UPDATE BookManagementSystem.BookData SET Name = 'Unity Engine Basic' WHERE ID = 1;    
 
 DROP TABLE BookData;
 
-SELECT * FROM BookDataSystemDB.BookData;
+SELECT * FROM BookManagementSystem.BookData;
 
 ALTER TABLE BookData RENAME COLUMN YearOfPublication TO DateOfPublishing;
 ALTER TABLE BookData DROP CreatedAt;
